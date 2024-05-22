@@ -8926,6 +8926,7 @@ button.bg-dark:focus {
 .mt-3,
 .my-3 {
   margin-top: 1rem !important;
+  color: #000;
 }
 
 .mr-3,
@@ -11783,3 +11784,53 @@ textarea.form-control {
   opacity: 1;
   visibility: visible;
 }
+
+
+
+ .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-title, .section-subtitle {
+            margin: 0;
+            padding: 10px 0;
+        }
+        .filters {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .filters a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+        }
+        .filters a.active {
+            font-weight: bold;
+        }
+        .grid {
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .grid img {
+            max-width: 150px;
+            margin-right: 20px;
+        }
+        .grid .details {
+            max-width: 800px;
+        }
+        .details h6 {
+            margin: 5px 0;
+        }
+        .portfolio-container .grid {
+            display: flex;
+        }
+
+
+
+
+
+        
