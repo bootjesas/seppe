@@ -9,16 +9,22 @@
     <!-- font icons -->
     <link rel="stylesheet" href="/public_html/assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + LeadMark main styles -->
-	<link rel="stylesheet" href="/public_html/assets/css/leadmark.css">
+	<link rel="stylesheet" href="./public_html/assets/css/leadmark.css">
     <link rel="home" href="./index.html">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 10);
+        });
+        </script>
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
-                <img src="/public_html/assets/imgs/SeppeMollenLogo1.png" alt="">
+                <img src="/public_html/assets/imgs/logo gitaar wit.png" alt="" class="white-logo">
+                <img src="/public_html/assets/imgs/logo gitaar bruin.png" alt="" class="brown-logo">
             </a>
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

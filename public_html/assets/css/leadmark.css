@@ -11833,4 +11833,28 @@ textarea.form-control {
 
 
 
-        
+        .navbar-brand img {
+          transition: opacity 0.3s;
+      }
+      
+      .navbar-brand img.white-logo {
+          opacity: 1;
+      }
+      
+      .navbar-brand img.brown-logo {
+          opacity: 0;
+          position: absolute;
+          top: 30px;
+          left: 130px;
+         
+      }
+      
+      .navbar.scrolled .navbar-brand img.white-logo {
+          opacity: 0;
+      }
+      
+      .navbar.scrolled .navbar-brand img.brown-logo {
+          opacity: 1;
+      }
+      
+      
