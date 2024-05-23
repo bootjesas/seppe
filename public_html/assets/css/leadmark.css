@@ -560,6 +560,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+
 }
 
 @media (min-width: 576px) {
@@ -11342,12 +11343,12 @@ textarea.form-control {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff5a29;
+  background: #936639;
   border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff6e42;
+  background:#936639;
 }
 
 .table.v-align-center th, .table.v-align-center td {
@@ -11425,8 +11426,8 @@ textarea.form-control {
 }
 
 .footer .social-links a:hover {
-  background: #ff6e42;
-  border-color: #ff6e42;
+  background: #936639;
+  border-color:#936639;
   color: #fff;
   text-decoration: none;
 }
@@ -11573,9 +11574,7 @@ textarea.form-control {
   padding: 80px 0;
 }
 
-.section:nth-child(even) {
-  background: #936639;
-}
+
 
 .section .section-devider {
   display: block;
@@ -11856,5 +11855,7 @@ textarea.form-control {
       .navbar.scrolled .navbar-brand img.brown-logo {
           opacity: 1;
       }
-      
+      #about{
+        background-color: #936639;
+      }
       
