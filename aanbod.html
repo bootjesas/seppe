@@ -70,9 +70,24 @@
     </header>
     <!-- End Of Page Header -->
     <style>
-             .grid-container {
+        .grid-container {
             display: grid;
             grid-template-columns: auto auto;
+            gap: 40px;
+            row-gap: 40px;
+            padding: 40px;
+        }
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 40px;
+            row-gap: 40px;
+            padding: 40px;
+            background-color: #926638;
+        }
+        .grid-container3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 40px;
             row-gap: 40px;
             padding: 40px;
@@ -80,11 +95,11 @@
         .grid-item {
             padding: 20px;
             text-align: center;
-          
         }
         .image {
-            width: 500px;
-            height: 500px;
+            width: 100%;
+            height: auto;
+            max-width: 500px;
             object-fit: cover;
         }
         .text-content {
@@ -93,58 +108,40 @@
         .more-info {
             text-align: center;
             margin-top: 20px;
+            color: #926638;
         }
-     
+        .wit {
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .grid-container, .grid-container2, .grid-container3 {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
-
-      <!-- Portfolio Section -->
-      <section id="" >
+    
+    <!-- Portfolio Section -->
+    <section id="portfolio">
         <h1 class="section-title text-center">Ons aanbod</h1>
-            <p class="section-subtitle text-center">Liever een gitaar op maat neem contact met ons op. </p>
+        <p class="section-subtitle text-center">Liever een gitaar op maat neem contact met ons op.</p>
+    
+        <!-- Grid 1 -->
         <div class="grid-container">
             <div class="grid-item">
                 <h3>Stratocaster</h3>
-                <img src="./public_html/assets/imgs/vecteezy_electric-guitar-icon-vector-design-template-in-white-background_.jpg" alt="Image 1" class="image">
-            </div>
-            <div class="grid-item text-content">
-                <h6>Houtsoorten:</h6>
-                        <p>Nek: esdoorn</p>
-                        <p>Body: alder hout</p>
-                        <p>Fretbord: Pallisander</p>
-                        <h6>Tremolo brug:</h6>
-                        <p>ghoto (merk)</p>
-                        <h6>Pickups:</h6>
-                        <p>naar keuze</p>
-                        <h6>Slagplaat:</h6>
-                        <p>Naar keuze</p>
-                        <h6>Stemmechanieken:</h6>
-                        <p>ghoto (merk)</p>
-                        <h6>Frets:</h6>
-                        <p>Medium jumbo</p>
-                        <h6>Nekvorm:</h6>
-                        <p> jaren 60 “C”</p>
-                        <h6>Kleur:</h6>
-                        <p>Naar keuze</p>
-                        <h6>Prijs:</h6>
-                        <p>1250 €</p>
-            </div>
-            <div class="grid-item">
-                <h3>Telecaster</h3>
-                <img src="./public_html/assets/imgs/3311_R0lVIE5JQyA3ODMtMDQ.jpg" alt="Image 2" class="image">
+                <img src="./public_html/assets/imgs/Achtergrond van Scherm­afbeelding 2024-05-28 om 18.39 verwijderd.12.png" alt="Stratocaster Image" class="image">
             </div>
             <div class="grid-item text-content">
                 <h6>Houtsoorten:</h6>
                 <p>Nek: esdoorn</p>
                 <p>Body: alder hout</p>
                 <p>Fretbord: Pallisander</p>
-                <h6>Brug:</h6>
+                <h6>Tremolo brug:</h6>
                 <p>ghoto (merk)</p>
                 <h6>Pickups:</h6>
                 <p>naar keuze</p>
                 <h6>Slagplaat:</h6>
                 <p>Naar keuze</p>
-                <h6>Binding:</h6>
-                <p>Creme</p>
                 <h6>Stemmechanieken:</h6>
                 <p>ghoto (merk)</p>
                 <h6>Frets:</h6>
@@ -156,40 +153,74 @@
                 <h6>Prijs:</h6>
                 <p>1250 €</p>
             </div>
+        </div>
+    
+        <!-- Grid 2 -->
+        <div class="grid-container2">
             <div class="grid-item">
-                <h3>Les paul</h3>
-                <img src="./public_html/assets/imgs/3311_R0lVIE5JQyA3ODMtMDY.jpg" alt="Image 3" class="image">
+                <h3 class="wit">Telecaster</h3>
+                <img src="./public_html/assets/imgs/Achtergrond van Scherm­afbeelding 2024-05-28 om 18.39 verwijderd.28.png" alt="Telecaster Image" class="image">
+            </div>
+            <div class="grid-item text-content">
+                <h6 class="wit">Houtsoorten:</h6>
+                <p class="wit">Nek: esdoorn</p>
+                <p class="wit">Body: alder hout</p>
+                <p class="wit">Fretbord: Pallisander</p>
+                <h6 class="wit">Brug:</h6>
+                <p class="wit">ghoto (merk)</p>
+                <h6 class="wit">Pickups:</h6>
+                <p class="wit">naar keuze</p>
+                <h6 class="wit">Slagplaat:</h6>
+                <p class="wit">Naar keuze</p>
+                <h6 class="wit">Binding:</h6>
+                <p class="wit">Creme</p>
+                <h6 class="wit">Stemmechanieken:</h6>
+                <p class="wit">ghoto (merk)</p>
+                <h6 class="wit">Frets:</h6>
+                <p class="wit">Medium jumbo</p>
+                <h6 class="wit">Nekvorm:</h6>
+                <p class="wit"> jaren 60 “C”</p>
+                <h6 class="wit">Kleur:</h6>
+                <p class="wit">Naar keuze</p>
+                <h6 class="wit">Prijs:</h6>
+                <p class="wit">1250 €</p>
+            </div>
+        </div>
+    
+        <!-- Grid 3 -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Les Paul</h3>
+                <img src="./public_html/assets/imgs/Achtergrond van Scherm­afbeelding 2024-05-28 om 18.39 verwijderd.46.png" alt="Les Paul Image" class="image">
             </div>
             <div class="grid-item text-content">
                 <h6>Houtsoorten:</h6>
-                        <p>Nek: Mahonie</p>
-                        <p>Body: Mahonie met esdoorn top</p>
-                        <p>Fretbord: Pallisander</p>
-                        <h6>brug:</h6>
-                        <p>ghoto (merk)</p>
-                        <h6>Pickups:</h6>
-                        <p>Humbucker</p>
-                        <h6>Slagplaat:</h6>
-                        <p>Naar keuze</p>
-                        <h6>Stemmechanieken:</h6>
-                        <p>Gotoh (merk)</p>
-                        <h6>Frets:</h6>
-                        <p>Medium jumbo</p>
-                        <h6>Nekvorm:</h6>
-                        <p>Jaren 60 "C"</p>
-                        <h6>Kleur:</h6>
-                        <p>Naar keuze</p>
-                        <h6>Prijs:</h6>
-                        <p>1850 €</p>
+                <p>Nek: Mahonie</p>
+                <p>Body: Mahonie met esdoorn top</p>
+                <p>Fretbord: Pallisander</p>
+                <h6>Brug:</h6>
+                <p>ghoto (merk)</p>
+                <h6>Pickups:</h6>
+                <p>Humbucker</p>
+                <h6>Slagplaat:</h6>
+                <p>Naar keuze</p>
+                <h6>Stemmechanieken:</h6>
+                <p>Gotoh (merk)</p>
+                <h6>Frets:</h6>
+                <p>Medium jumbo</p>
+                <h6>Nekvorm:</h6>
+                <p>Jaren 60 "C"</p>
+                <h6>Kleur:</h6>
+                <p>Naar keuze</p>
+                <h6>Prijs:</h6>
+                <p>1850 €</p>
             </div>
         </div>
-            
-     <p class="more-info">*De prijzen zijn een schatting om u een idee te geven hoeveel jou droomgitaar zal kosten.
-        Alle wijzigingen die we samen doornemen kunnen een invloed hebben op de prijs.
-        </p>
+    
+        <p class="more-info">*De prijzen zijn een schatting om u een idee te geven hoeveel jou droomgitaar zal kosten. Alle wijzigingen die we samen doornemen kunnen een invloed hebben op de prijs.</p>
     </section>
-    <!-- End of portfolio section -->
-
+    
+    <!-- end off Contact Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="section has-img-bg pb-0">
