@@ -18,6 +18,26 @@
             navbar.classList.toggle('scrolled', window.scrollY > 10);
         });
         </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Zoek alle menu-items
+                var menuItems = document.querySelectorAll('.nav-link');
+            
+                // Voeg een event listener toe aan elk menu-item
+                menuItems.forEach(function(item) {
+                    item.addEventListener('click', function() {
+                        // Zoek het collapsible element dat het menu bevat
+                        var navbarCollapse = document.querySelector('.navbar-collapse');
+            
+                        // Controleer of het collapsible element open is
+                        if (navbarCollapse.classList.contains('show')) {
+                            // Sluit het collapsible element
+                            navbarCollapse.classList.remove('show');
+                        }
+                    });
+                });
+            });
+            </script>
     <!-- page Navigation -->
     <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
         <div class="container">
@@ -48,15 +68,15 @@
                     <li class="nav-item">
                         <a href="#contact" class="ml-4 nav-link btn btn-primary btn-sm rounded">contact</a>
                     </li>
-                </ul>
-                <div>
-                    <a href="https://www.facebook.com/Seppe-mollen-guitars-102087295723828" target="_blank">
-                        <img class="facebook" src="/public_html/assets/imgs/facebook-logo-facebook-icon-transparent-free-png.webp" width="40px" alt="Facebook">
-                    </a>
-                    
-                </div>
-                 
+                </ul>  
             </div>
+          
+        </div>
+        <div>
+            <a href="https://www.facebook.com/Seppe-mollen-guitars-102087295723828" target="_blank">
+                <img class="facebook" src="/public_html/assets/imgs/facebook-logo-facebook-icon-transparent-free-png.webp" width="40px" alt="Facebook">
+            </a>
+            
         </div>
     </nav>
     <!-- End Of Second Navigation -->
