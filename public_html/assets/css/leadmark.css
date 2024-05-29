@@ -11457,10 +11457,11 @@ textarea.form-control {
   position: relative;
   height: 100vh;
   min-height: 500px;
-  background: url(../imgs/background.jpeg) no-repeat center center fixed;
-  background-size: cover;
   overflow: hidden;
+  background: url(../imgs/background.jpeg) no-repeat center center fixed !important;
+  background-size: cover !important;
 }
+
 
 .header .overlay {
   position: absolute;
