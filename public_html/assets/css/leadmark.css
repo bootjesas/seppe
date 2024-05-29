@@ -8866,6 +8866,10 @@ button.bg-dark:focus {
   margin-bottom: 0 !important;
   color: #fff;
 }
+.mb-011 {
+  margin-bottom: 0 !important;
+  color: #fff;
+  margin-top: -120px;}
 
 .ml-0,
 .mx-0 {
@@ -11220,6 +11224,7 @@ textarea.form-control {
     -webkit-transition: none;
     transition: none;
   }
+ 
 }
 
 .navbar.navbar-dark .navbar-brand {
@@ -11242,6 +11247,7 @@ textarea.form-control {
 .navbar.custom-navbar {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  
   
 }
 
@@ -11862,10 +11868,28 @@ textarea.form-control {
       #about{
         background-color:#936639 ;
       }
-     
-      .facebook{
-       margin-top:-190%;
-       margin-left: 1500%;
+      .facebook-icon {
+        width: 40px;
+       margin-top: -8px;
+    }
+    .container1{
+      justify-content: center;
+   
       
-      
+    }
+
+    @media (max-width: 768px) {
+      .facebook-icon {
+margin-left: 90%;
+margin-top: -110%;
+         
       }
+      .mb-011 {
+        margin-bottom: 0 !important;
+        color: #fff;
+      margin-top: -40px;
+        }
+     
+  
+     
+  }
