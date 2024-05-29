@@ -11864,14 +11864,8 @@ textarea.form-control {
       }
      
       .facebook{
-       margin-top:-200%;
+       margin-top:-190%;
        margin-left: 1500%;
       
       
       }
-    
-      @media only screen and (max-width: 768px) {
-        .facebook {
-        
-        }
-    }
